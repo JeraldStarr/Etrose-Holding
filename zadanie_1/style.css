@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --accent: #741854;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    position: absolute;
+    background: white;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    min-height: 100px;
+}
+/* first section */
+section:first-of-type {
+    height: 340px;
+    padding: 1vw;
+} 
+section:first-of-type img {
+    position: absolute;
+    top: 0;
+    right: 1%;
+    z-index: -1;
+    width: 210px;
+}
+section:first-of-type button {
+    background-image: linear-gradient(to bottom, rgb(145, 44, 104), rgb(85, 15, 49)); 
+    margin-left: 6vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 31%;
+    font-weight: 600;
+    font-size: 1.3vw;
+    padding: 8px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+}
+section p:first-of-type {
+    color: black;
+    margin-top: 54px;
+    font-size: 17px;
+}
+section p:nth-of-type(2) {
+    color: var(--accent);
+}
+
+.header {
+    font-weight: bold;
+    font-size: 1.5vw;
+    line-height: 150%;
+}
+
+.text {
+    font-size: 1.2vw;
+    font-weight: bold;
+    width: 60%;
+    line-height: 140%;
+    margin-top: 30px;
+}
+
+/*second section*/
+section:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    height: 6vw;
+    font-size: 1.5vw;
+}
+section:nth-of-type(2) div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/bar.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    height: 5vw;
+    width: 95%;
+}
+/*third section*/
+section:nth-of-type(3) {
+    display: flex;
+    height: 23vw;    
+}
+section:nth-of-type(3) #sec3Container {
+    background-image: url(img/legs_2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 95%;
+}
+#upperLayer {
+    display: flex;
+    color: white;
+    font-weight: 500;
+}
+#sec3Left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 28%;
+    margin-left: 2vw;
+    height: 3vw;
+}
+#sec3Right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+#sec3Right span {
+    margin-left: -8vw;
+}
+#sec3Container ul {
+    position: relative;
+    top: .9vw;
+    left: 22vw;
+    font-size: 1.3vw;
+    width: 180px;
+}
+
+#sec3Container ul li {
+    list-style-image: url(img/check.jpg);
+    line-height: 270%;
+}
+#bottomLayer{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    height: 2vw;
+    margin-top: 13.3%;
+    font-size: 1.2vw;
+}
+/* founth section */
+section:nth-of-type(4) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section:nth-of-type(4) button {
+    background-image: linear-gradient(to bottom, rgb(145, 44, 104), rgb(85, 15, 49)); 
+    width: 60%;
+    font-weight: bold;
+    font-size: 1.3vw;
+    padding: 13px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    margin-top: -30px;
+}
+/* fifth section */
+
+section:nth-of-type(5) {
+    background-image: url("img/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@media only screen and (max-width: 1024px){
+    #bottomLayer {
+        margin-top: 14.9%;
+        font-size: 1.3vw;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    section:first-of-type {
+        min-height: 350px;
+        padding: 5vw;
+    }
+    section:first-of-type img {
+        width: 35%;
+        opacity: .4;
+        left: 60%;
+        transform: translate(-10%)
+    }
+    section p:first-of-type {
+        margin-top: 20px;
+    }
+    section:first-of-type button {
+        margin-top: 56px;
+        width: 42%;
+        font-size: 2.5vw;
+        padding: 9px;
+    }
+    .header {
+        font-size: 2.3vw;
+    }
+    .text {
+        width: 80%;
+        font-size: 13px;
+    }
+    section:nth-of-type(2) {
+        height: 10vw;
+    }
+    section:nth-of-type(2) div {
+        font-size: 2.5vw;
+        height: 9vw;
+    }
+    section:nth-of-type(3) {
+        height: 290px;
+    }
+    #sec3Left {
+        flex-basis: 28%;
+        margin-left: 3.3vw;
+        height: 5vw;
+    }
+    #sec3Right {
+        height: 5vw;
+    }
+    #sec3Right span {
+        margin-left: -12vw;
+    }
+    #sec3Container ul {
+        position: relative;
+        top: 4vw;
+        left: 50%;
+        font-weight: bold;
+        font-size: 1.8vw;
+        width: 180px;
+    }
+    section:nth-of-type(4) button {
+        font-size: 2.5vw;
+    }
+
+    #sec3Container ul li {
+        list-style-image: url(img/check.jpg);
+        line-height: 240%;
+    }
+    #bottomLayer {
+        margin-top: 19%;
+        font-size: 1.7vw;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    #bottomLayer {
+        margin-top: 22%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        font-size: 3.5vw;
+        line-height: 112%;
+    }
+    section:first-of-type {
+        min-height: 0;
+        height: 280px;
+    }
+    section:nth-of-type(2) div {
+        font-size: 3vw;
+    }
+    section:nth-of-type(3) {
+        height: 50vw;
+    }
+    #sec3Left {
+        font-size: 3vw;
+        flex-basis: 28%;
+        margin-left: 3.3vw;
+    }
+    #sec3Right {
+        height: 5vw;
+        font-size: 3vw;
+    }
+    #sec3Container ul {
+        font-size: 2.5vw;
+    }
+    #bottomLayer {
+        margin-top: 18%;
+        font-size: 2.7vw;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    section:first-of-type img {
+        width: 50%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    section:first-of-type {
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .header {
+        font-size: 4vw;
+        text-align: left;
+    }
+    .text {
+        text-align: left;
+    }
+    #sec3Container ul {
+        font-size: 3vw;
+    }
+    #bottomLayer {
+        margin-top: 14.7%;
+        font-size: 2.8vw;
+    }
+    section:nth-of-type(2) {
+        min-height: 70px;
+    }
+    section:nth-of-type(5) {
+        min-height: 90px;
+    }
+}
